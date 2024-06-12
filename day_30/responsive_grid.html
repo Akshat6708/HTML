@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 95vw;
+            height: 95vh;
+            background-color: rgb(174, 150, 197);
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px,300px));
+            margin:1rem auto;
+            gap: 1rem;
+            justify-content: center;
+           
+        }
+        .box{
+            border:1px solid black;
+            color: white ;
+            background-color:rgb(236, 86, 27);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+        <div class="box">F</div>
+        <div class="box">G</div>
+        <div class="box">H</div>
+        <div class="box">I</div>
+    </div>
+</body>
+</html>

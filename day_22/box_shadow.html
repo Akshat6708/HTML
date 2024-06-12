@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --first-color:green;
+            --second-color:rgb(255, 85, 0);
+        }
+        .container{
+            background-color: rgb(206, 206, 44);
+            border: 2px solid black;
+            width: 600px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+    
+    }
+        .box{
+            border: 2px solid rgb(181, 39, 39);
+            width: 300px;
+            height: 300px;
+            padding: 5px;
+            margin: 5px;
+            background-color: rgba(137, 43, 226, 0.738);
+            /* background-color: var(--first-color); */
+              /* (box shadow ) */
+           /* box-shadow: 10px 9px ; */
+           /* box-shadow:-10px -15px brown; */
+           box-shadow:10px 10px 8px;
+  
+                 /* (box-shadow: x-direction y-dir blur spread radius color) */
+           /* box-shadow:20px 5px 5px 10px black; */
+           /* box-shadow: inset 10px 10px 5px; */
+        
+                     /* (multiple-shadow) */
+                     
+           /* box-shadow: 10px 15px 5px ,-10px -15px 5px red;           */
+
+                                           /* (   variable) */
+           /* box-shadow: 10px 13px 5px var(--second-color);
+                   */
+        }
+        #akshat{
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+        #heading1{
+            /* text-shadow: 3px 3px 2px pink; */
+            /* text-shadow: -1px -2px 5px gold; */
+            /* text-shadow: rgb(210, 30, 30) 2px 3px; */
+            text-shadow: 2px 3px 1px blue,4px 4px 2px red,3px 3px 3px green;
+        }
+        #para{
+            text-shadow: 1px 1px gold;
+            font-size:medium;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="images.jpg" alt="image" id="akshat">
+            <h1 id="heading1">hello jee</h1>
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente minus commodi mollitia corporis qui veritatis distinctio nemo hic dolorum? Earum nesciunt animi rerum? Ab ullam voluptatibus sunt totam adipisci labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis cumque magni qui repellendus aperiam? Nobis quam dignissimos at voluptatem sequi corrupti odit obcaecati deleniti qui, quaerat est quasi perferendis.</p>
+        
+        </div>
+    </div>
+</body>
+</html>

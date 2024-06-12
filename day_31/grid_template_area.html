@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid grid-template-area</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            gap: 0.5rem;
+            border: 5px solid gray;
+            background-color: rgb(31, 76, 197);
+            padding: 0.7rem;
+display: grid;
+          grid-template-areas:
+          "header header header"
+          "sidebar containt1 containt1"
+          "sidebar containt2 containt3 "
+          "footer footer footer"
+           ;
+        }
+        #header{
+            grid-area: header;
+        }
+        #sidebar{
+            grid-area: sidebar;
+        }
+        #containt1{
+            grid-area: containt1;
+        }
+        #containt2{
+            grid-area: containt2;
+        }
+        #containt3{
+            grid-area: containt3;
+        }
+       
+        .box{
+border: 0.5px solid rgb(0, 0, 0);
+background-color:rgba(235, 209, 12, 0.99) ;
+border-radius: 0.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow:rgb(34, 32, 32) 3px 3px 10px;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="header">header</div>
+        <div class="box" id="sidebar">sidebar</div>
+        <div class="box" id="containt1">containt1</div>
+        <div class="box" id="containt2">containt2</div>
+        <div class="box" id="containt3">containt3</div>
+        <div class="box" id="footer">footer</div>
+    </div>
+</body>
+</html>
