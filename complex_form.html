@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+           
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            background-color: antiquewhite;
+            /* width: 90%;
+            height: 70%; */
+         
+        }
+        #field1{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <div class="container">
+        
+        <fieldset id="field1">
+            <h3>
+                complex form
+            </h3>
+            <div class="fieldset">
+                <fieldset>
+                    <legend>personal information</legend>
+                    <label for="name">Name:</label>
+                    <input type="name" id="name">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone">
+                    <label for="date">Date of birth:</label>
+                    <input type="date" id="date">
+                    <b>Gender:</b>
+                    <label for="radio">male</label>
+                    <input type="radio" id="radio" name="radio">
+                    <label for="radio">Female</label>
+                    <input type="radio" id="radio" name="radio">
+    
+    
+                </fieldset>
+            </div>
+           
+           
+        </fieldset>
+    </div>
+    </form>
+</body>
+</html>
